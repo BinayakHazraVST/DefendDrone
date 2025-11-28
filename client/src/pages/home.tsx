@@ -53,6 +53,7 @@ import armyLaunching from "@assets/generated_images/indian_army_launching_drone.
 import commandCenter from "@assets/generated_images/indian_army_command_center.png";
 import droneLanding from "@assets/generated_images/drone_landing_indian_army_field.png";
 import officerControlling from "@assets/generated_images/indian_officer_controlling_drone.png";
+import droneFlightVideo from "@assets/generated_videos/advanced_drone_flying_through_sky.mp4";
 
 const contactFormSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
