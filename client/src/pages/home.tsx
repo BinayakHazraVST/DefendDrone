@@ -57,6 +57,7 @@ import armedDrone from "@assets/generated_images/armed_military_drone_with_weapo
 import droneAttackVideo from "@assets/generated_videos/armed_drone_attacking_with_weapons.mp4";
 import droneWithGunsVideo from "@assets/generated_videos/military_drone_with_guns_flying.mp4";
 import engineersWithDrone from "@assets/generated_images/engineers_building_armed_tactical_drone.png";
+import modernArmedDroneVideo from "@assets/generated_videos/modern_armed_tactical_drone_flying.mp4";
 
 const contactFormSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -361,7 +362,7 @@ export default function Home() {
             data-testid="video-hero"
           >
             <source
-              src={droneAttackVideo}
+              src={modernArmedDroneVideo}
               type="video/mp4"
             />
           </video>
