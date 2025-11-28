@@ -119,6 +119,51 @@ const stats = [
   { value: "24/7", label: "Operational Ready" },
 ];
 
+const timeline = [
+  {
+    year: "2009",
+    title: "Project Initiation",
+    description: "D.E.F.E.N.D project launched with DRDO collaboration for indigenous drone development",
+    status: "completed",
+  },
+  {
+    year: "2012",
+    title: "First Prototype",
+    description: "Successfully tested the first prototype with advanced surveillance capabilities",
+    status: "completed",
+  },
+  {
+    year: "2015",
+    title: "Army Integration",
+    description: "Integrated with Indian Army for field operations and tactical deployment",
+    status: "completed",
+  },
+  {
+    year: "2018",
+    title: "AI Enhancement",
+    description: "Implemented indigenous AI algorithms for autonomous mission planning",
+    status: "completed",
+  },
+  {
+    year: "2021",
+    title: "Counter-Drone Systems",
+    description: "Deployed advanced electronic warfare and counter-drone capabilities",
+    status: "completed",
+  },
+  {
+    year: "2024",
+    title: "Next Generation",
+    description: "Current development: Next-gen drone with hypersonic capabilities and stealth technology",
+    status: "in-progress",
+  },
+  {
+    year: "2026",
+    title: "Global Integration",
+    description: "Planned integration with allied nation defense systems for collaborative operations",
+    status: "planned",
+  },
+];
+
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -313,7 +358,7 @@ export default function Home() {
             data-testid="video-hero"
           >
             <source
-              src="https://cdn.pixabay.com/video/2020/05/25/40271-424209943_large.mp4"
+              src={droneFlightVideo}
               type="video/mp4"
             />
           </video>
