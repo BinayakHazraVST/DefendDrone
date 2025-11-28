@@ -351,7 +351,7 @@ export default function Home() {
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
       >
         {/* Video Background */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 bg-black">
           <video
             autoPlay
             muted
@@ -368,8 +368,8 @@ export default function Home() {
             Your browser does not support the video tag.
           </video>
           {/* Dark Overlay with Indian tricolor gradient hint */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
-          <div className="absolute inset-0 bg-gradient-to-r from-orange-900/20 via-transparent to-green-900/20" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-orange-900/10 via-transparent to-green-900/10" />
         </div>
 
         {/* Hero Content */}
