@@ -362,9 +362,10 @@ export default function Home() {
             data-testid="video-hero"
           >
             <source
-              src={modernArmedDroneVideo}
+              src="/drone-hero-video.mp4"
               type="video/mp4"
             />
+            Your browser does not support the video tag.
           </video>
           {/* Dark Overlay with Indian tricolor gradient hint */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
