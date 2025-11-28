@@ -53,7 +53,8 @@ import armyLaunching from "@assets/generated_images/indian_army_launching_drone.
 import commandCenter from "@assets/generated_images/indian_army_command_center.png";
 import droneLanding from "@assets/generated_images/drone_landing_indian_army_field.png";
 import officerControlling from "@assets/generated_images/indian_officer_controlling_drone.png";
-import droneFlightVideo from "@assets/generated_videos/advanced_drone_flying_through_sky.mp4";
+import armedDrone from "@assets/generated_images/armed_military_drone_with_weapons.png";
+import droneAttackVideo from "@assets/generated_videos/armed_drone_attacking_with_weapons.mp4";
 
 const contactFormSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -358,7 +359,7 @@ export default function Home() {
             data-testid="video-hero"
           >
             <source
-              src={droneFlightVideo}
+              src={droneAttackVideo}
               type="video/mp4"
             />
           </video>
@@ -492,8 +493,8 @@ export default function Home() {
             >
               <div className="relative rounded-md overflow-hidden">
                 <img
-                  src={testingFacility}
-                  alt="D.E.F.E.N.D drone in Indian testing facility"
+                  src={armedDrone}
+                  alt="D.E.F.E.N.D armed military drone with weapons payload"
                   className="w-full h-auto object-cover rounded-md"
                   data-testid="img-about-drone"
                 />
