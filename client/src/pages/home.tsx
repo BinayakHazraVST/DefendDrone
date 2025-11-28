@@ -495,10 +495,10 @@ export default function Home() {
             >
               <div className="relative rounded-md overflow-hidden">
                 <img
-                  src={engineersWithDrone}
-                  alt="D.E.F.E.N.D engineers building advanced armed tactical drone"
+                  src={testingFacility}
+                  alt="D.E.F.E.N.D drone testing and calibration facility"
                   className="w-full h-auto object-cover rounded-md"
-                  data-testid="img-about-engineers-drone"
+                  data-testid="img-about-drone"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
               </div>
