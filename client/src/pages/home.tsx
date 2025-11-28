@@ -362,7 +362,7 @@ export default function Home() {
             data-testid="video-hero"
           >
             <source
-              src={modernArmedDroneVideo}
+              src="/attached_assets/generated_videos/modern_armed_tactical_drone_flying.mp4"
               type="video/mp4"
             />
           </video>
