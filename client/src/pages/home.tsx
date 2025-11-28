@@ -56,6 +56,7 @@ import officerControlling from "@assets/generated_images/indian_officer_controll
 import armedDrone from "@assets/generated_images/armed_military_drone_with_weapons.png";
 import droneAttackVideo from "@assets/generated_videos/armed_drone_attacking_with_weapons.mp4";
 import droneWithGunsVideo from "@assets/generated_videos/military_drone_with_guns_flying.mp4";
+import engineersWithDrone from "@assets/generated_images/engineers_building_armed_tactical_drone.png";
 
 const contactFormSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -492,20 +493,13 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="relative"
             >
-              <div className="relative rounded-md overflow-hidden bg-black">
-                <video
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
+              <div className="relative rounded-md overflow-hidden">
+                <img
+                  src={engineersWithDrone}
+                  alt="D.E.F.E.N.D engineers building advanced armed tactical drone"
                   className="w-full h-auto object-cover rounded-md"
-                  data-testid="video-about-drone"
-                >
-                  <source
-                    src={droneWithGunsVideo}
-                    type="video/mp4"
-                  />
-                </video>
+                  data-testid="img-about-engineers-drone"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
               </div>
               {/* Decorative Elements - Indian tricolor inspired */}
