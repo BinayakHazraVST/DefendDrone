@@ -42,6 +42,7 @@ import {
   X,
   Moon,
   Sun,
+  Zap,
 } from "lucide-react";
 import { SiLinkedin, SiX } from "react-icons/si";
 
@@ -517,6 +518,32 @@ export default function Home() {
             </p>
           </motion.div>
 
+          {/* Guns and Ammunition - Main Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-12"
+          >
+            <Card className="p-8 md:p-12 bg-gradient-to-br from-primary/10 to-primary/5 border-primary/30 hover-elevate">
+              <div className="flex flex-col md:flex-row gap-8 items-start md:items-center">
+                <div className="w-16 h-16 rounded-lg bg-primary/20 flex items-center justify-center flex-shrink-0">
+                  <Zap className="h-8 w-8 text-primary" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-heading text-2xl md:text-3xl font-bold uppercase tracking-wide mb-4 text-primary">
+                    Integrated Guns & Ammunition Systems
+                  </h3>
+                  <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                    Advanced weaponized tactical systems featuring precision-guided ammunition delivery, rapid-fire capabilities, and state-of-the-art targeting systems. Our indigenous gun turrets are equipped with real-time ballistic correction and AI-assisted fire control. Multiple ammunition types supported including armor-piercing, high-explosive, and specialized payload delivery systems. Fully integrated with drone's fire control computer for seamless tactical coordination.
+                  </p>
+                </div>
+              </div>
+            </Card>
+          </motion.div>
+
+          {/* Other Capabilities Grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {capabilities.map((cap, index) => (
               <motion.div
