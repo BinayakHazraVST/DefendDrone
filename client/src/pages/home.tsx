@@ -467,23 +467,6 @@ export default function Home() {
                 access to the most advanced, reliable, and Made-in-India aerial
                 defence systems.
               </p>
-
-              {/* Stats */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                {stats.map((stat, index) => (
-                  <Card
-                    key={index}
-                    className="p-4 text-center"
-                  >
-                    <p className="font-heading text-2xl md:text-3xl font-bold text-primary">
-                      {stat.value}
-                    </p>
-                    <p className="text-xs uppercase tracking-wider text-muted-foreground mt-1">
-                      {stat.label}
-                    </p>
-                  </Card>
-                ))}
-              </div>
             </motion.div>
 
             <motion.div
